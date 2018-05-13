@@ -29,6 +29,7 @@ def make_peak_finder(thresh=0):
     return peak_finder
     
 if __name__ == '__main__':
+    peak_f = peak_finder(10)
     my_nums = [3,4,2,13,1,2,5,6,3,8,23,33,100,100,100,99,69,1]
     peaks = [peak_f(data) for data in my_nums]
     print(peaks)
