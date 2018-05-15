@@ -59,3 +59,6 @@ ax.plot(peak_data[1:], marker='o', color='r')
 
 plt.show()
 ```
+<img width="500" src="media/figure_1.png" alt="hi" class="inline"/> <img width="500" src="media/figure_2.png" alt="hi" class="inline"/>
+
+
