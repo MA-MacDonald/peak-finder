@@ -47,9 +47,9 @@ def peak_finder(thresh=0):
 import matplotlib.pyplot as plt
 import random
 
-find_peaks = peak_finder(10)
+pf = peak_finder(10)
 sample_data = random.sample(range(1, 100), 50)
-peak_data = [find_peaks(num) for num in sample_data]
+peak_data = [pf(num) for num in sample_data]
 
 fig = plt.figure(figsize=(10, 8))
 ax = fig.add_subplot(111)
