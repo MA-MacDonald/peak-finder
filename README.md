@@ -41,3 +41,21 @@ def peak_finder(thresh=0):
 
     return detect_peak
 ```
+
+## Example:
+```Python
+import matplotlib.pyplot as plt
+import random
+
+find_peaks = peak_finder(10)
+sample_data = random.sample(range(1, 100), 50)
+peak_data = [find_peaks(num) for num in sample_data]
+
+fig = plt.figure(figsize=(10, 8))
+ax = fig.add_subplot(111)
+
+ax.plot(sample_data, marker='^', color='b')
+ax.plot(peak_data[1:], marker='o', color='r')
+
+plt.show()
+```
