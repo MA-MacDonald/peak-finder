@@ -1,4 +1,4 @@
-# peak_finder
+# Peak Finder
 Lightweight algorithm to find peaks in single point streaming data
 
 ```Python
