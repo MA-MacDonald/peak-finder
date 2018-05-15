@@ -1,5 +1,5 @@
 # peak_finder
-simple algorithm to find a peak in single point streaming data
+Lightweight algorithm to find a peak in single point streaming data
 
 ```Python
 def peak_finder(thresh=0):
