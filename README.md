@@ -15,7 +15,7 @@ def peak_finder(thresh=0):
     ascent_start = None  # Last trough height
 
     def detect_peak(data):
-        """ Returns initialized function to detect peaks on live streaming data.
+        """ Returns data value if data is determined to be a peak, else returns None.
             Args:
                 data (numeric value): Input data point.
             Returns:
