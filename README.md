@@ -1,27 +1,12 @@
 # Peak Finder
-Lightweight algorithm to find peaks in single point streaming data
 
 ```Python
 def peak_finder(thresh=0):
-    """ Returns initialized function to detect peaks on live streaming data.
-       Args:
-           thresh (int): The amplitude threshold in which peaks are recognized.
-       Returns:
-           function object: The function that detects peaks in streaming data.
-    """
-    
     last = 0  # Track last input value
     ascent_dist = 0  # Distance from last trough.
     ascent_start = None  # Last trough height
 
     def detect_peak(data):
-        """ Returns data value if data is determined to be a peak, else returns None.
-            Args:
-                data (numeric value): Input data point.
-            Returns:
-                If peak is detected return peak value, else return None
-        """
-        
         nonlocal last, ascent_dist, ascent_start
         if data > last:
             if ascent_start is None:
