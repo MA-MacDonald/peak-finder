@@ -4,8 +4,8 @@ Lightweight Python algorithm to find peaks in single point streaming data.
 ```Python
 def peak_finder(thresh=0):
     last = 0  # Track last input value
-    ascent_dist = 0  # Distance from last trough.
-    ascent_start = None  # Last trough height
+    ascent_dist = 0  # Horizontal distance from last trough.
+    ascent_start = None  # Height of last trough.
 
     def detect_peak(data):
         nonlocal last, ascent_dist, ascent_start
