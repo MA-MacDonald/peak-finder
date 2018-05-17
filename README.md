@@ -33,7 +33,7 @@ def peak_finder(thresh=0):
 import matplotlib.pyplot as plt
 import random
 
-pf = peak_finder(10)
+pf = peak_finder(10)  # set threshold to 10.
 sample_data = random.sample(range(1, 100), 50)
 peak_data = [pf(num) for num in sample_data]
 
